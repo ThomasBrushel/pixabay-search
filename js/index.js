@@ -9,8 +9,6 @@ function fetchImages(e) {
   fetch("https://pixabay.com/api/?key=8772164-4f816aa8fc1fc3045290454a0&q=" + searchTerm + "&image_type=photo&per_page=" + limit).then(function (response) {
     return response.json();
   }).then(function (resp) {
-    console.log(resp);
-
     var hitsArray = resp.hits;
     showImages(hitsArray);
 
