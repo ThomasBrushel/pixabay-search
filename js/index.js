@@ -6,7 +6,7 @@ function fetchImages(e) {
 
   var searchTerm = document.querySelector(".search").value;
   var limit = 200;
-  fetch("https://pixabay.com/api?key=8772164-4f816aa8fc1fc3045290454a0&q=" + searchTerm + "&image_type=photo&per_page=" + limit).then(function (response) {
+  fetch("https://pixabay.com/api/?key=8772164-4f816aa8fc1fc3045290454a0&q=" + searchTerm + "&image_type=photo&per_page=" + limit).then(function (response) {
     return response.json();
   }).then(function (resp) {
     console.log(resp);
@@ -37,7 +37,7 @@ function fetchImages(e) {
   });
 }
 
-console.log('hit')
+console.log('updated....')
 
 function showImages(hitsArray) {
   var results = document.querySelector(".results");
