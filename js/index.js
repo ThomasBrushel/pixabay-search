@@ -37,8 +37,6 @@ function fetchImages(e) {
   });
 }
 
-console.log('updated....')
-
 function showImages(hitsArray) {
   var results = document.querySelector(".results");
   console.log(results);
