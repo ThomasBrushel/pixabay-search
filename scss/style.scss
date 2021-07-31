@@ -111,8 +111,11 @@ form {
 }
 
 .alert-msg {
-  display: flex;
-  color: red;
+  display: none;
+  text-align: center;
+  background: red;
+  color: white;
+  padding: 1rem;
 }
 
 p {
